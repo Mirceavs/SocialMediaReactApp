@@ -29,7 +29,7 @@ export const register = async(req, res) => {
             friends,
             location,
             occupation,
-            viewedProfile: Math.floor(Math.random() * 1000), // dummy value, not wirting the functionality for the sake of simplicity
+            viewedProfile: Math.floor(Math.random() * 1000), // dummy value, not writing the functionality for the sake of simplicity
             impressions: Math.floor(Math.random() * 1000), // same as above
         });
         const savedUser = await newUser.save();
